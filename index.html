@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookShelf Apps</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-bar">
+        <div class="brand">
+          <img src="assets/logo.png" alt="logo" />
+          <h1>bookshelf <span>apps</span></h1>
+        </div>
+        <div class="search-bar">
+          <input type="search" placeholder="Cari Buku.." id="input" />
+          <img src="assets/search.svg" alt="search" id="search" />
+        </div>
+      </div>
+    </header>
+    <div class="hidden-search-bar">
+      <input type="search" placeholder="Cari Buku.." id="input" />
+      <img src="assets/search.svg" alt="search" id="search" />
+    </div>
+
+    <main>
+      <article>
+        <form class="form-container" action="#" id="form">
+          <h1>masukkan buku baru:</h1>
+          <div class="form-list">
+            <label for="title">Judul:</label>
+            <input type="text" id="title" required />
+            <label for="author">Penulis:</label>
+            <input type="text" id="author" required />
+            <label for="year">Tahun:</label>
+            <input type="text" id="year" required />
+            <button type="submit">Masukkan buku</button>
+          </div>
+        </form>
+      </article>
+
+      <aside>
+        <div class="book-container">
+          <div class="unread-book-container">
+            <h2>Belum selesai dibaca</h2>
+            <div class="unread-book-list" id="unread-book-list"></div>
+          </div>
+
+          <div class="readed-book-container">
+            <h2>Sudah selesai dibaca</h2>
+            <div class="readed-book-list" id="readed-book-list"></div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>&copy;Rizky Muhammad Yusuf 2023</p>
+    </footer>
+
+    <script src="js/script.js" type="text/javascript"></script>
+  </body>
+</html>
